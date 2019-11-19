@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TeleponActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_nomor_tujuan"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nomor telepon"
+            android:inputType="phone" />
+        <ImageButton
+            android:id="@+id/btn_open_contact"
+            android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_panggil_langsung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panggil Button" />
+
+    <Button
+        android:id="@+id/btn_dial_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial phone" />
+</LinearLayout>
